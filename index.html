@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Shit</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet">
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body>
+    <!-- home -->
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-d"></i>
+                    <div class="logo-text">DMB`</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- round profile -->
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="djcrop.png" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi, I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Djanairah Benito</h1>
+                    <p>From Caloocan City, NCR, Philippines! <br>
+                        Currently 2nd year student who is taking a Degree of <br>
+                        Bachelor of Science in Information Technology (BSIT) <br>
+                        at National University - Fairview Campus.
+                    </p>
+                    
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#contact" class="btn">Contact</a>
+                    </div>
+                    
+                    <!-- social buttons -->
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-upwork"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- looped typing jobs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        // window.onscroll = () => {
+        //     nav.classList.remove("click");
+        //     links.classList.remove("open");
+        // }
+
+        var typed=new Typed(".input", {
+            strings:["Web Designer", "Facebook ADS Manager", "Video Editor"], 
+            typedSpeed:70, 
+            backSpeed:55, 
+            loop:true
+        })
+    </script>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="center">
+            <div class="h-main">
+
+                <div class="h-text">
+                    <h1>About me</h1>
+                </div>
+                
+                <p>Greetings, Djanairah's here!. Passionate about technology and advertising and thriving on how some opportunities that will lead us, me and you to new possibilities in near future.
+                    With a background in these fields, I bring overall a 3 years of experience in these expertise such as supporting customers' inquiries, 
+                    short creative materials, and managing Facebook ads account for advertising. Seeking new challenges to improve and develop my to find new different abilities to expand my expertise.
+                </p>
+
+            </div>
+       
+                <div class="about-content">
+
+                    <div class="box">
+                        <h3>Virtual Assistant</h3>
+                        <a href="#">3 Years Experience</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>Video Editor</h3>
+                        <a href="#">1.5 Years Experience</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>Facebook ADS Specialist</h3>
+                        <a href="#">1 Year Experience</a>
+                    </div>
+
+                </div>
+
+                <p>In this field, my skills in academic projects and collaborative assignments that were refined that I mostly excel are those of the following:
+                </p>
+
+                <div class="about-content">
+
+                    <div class="box">
+                        <h3>Android Developer</h3>
+                        <a href="#">336+ Hours Experience</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>UI/UX Designer</h3>
+                        <a href="#">78+ Hours Experience</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>Frontend Developer</h3>
+                        <a href="#">30+ Hours Experience</a>
+                    </div>   
+                </div>
+        </div>    
+    </section>
+
+    <!-- Work -->
+    <section class="work" id="work">
+        <div class="center">
+            <div class="h-main">
+                <div class="h-text">
+                    <h1>Work</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Curabitur a leo finibus, rhoncus nibh sed, ultrices dui. 
+                    Aliquam est neque, gravida eu semper a, bibendum in risus. 
+                    Proin vitae orci a massa condimentum efficitur sed id magna. 
+                    Quisque bibendum tempus nulla vel suscipit. 
+                    Proin venenatis ullamcorper dolor, ut feugiat diam placerat maximus. 
+                    Maecenas pellentesque elementum leo quis condimentum.</p>
+            </div>
+        </div>
+
+        <div class="work-content">
+            <div class="row">
+                <img src="canva.png">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5>Creative Video Material</h5>
+                        <h4>Video Editing</h4>
+                    </div>
+                    <div class="row-icon">
+                        <i class="ri-youtube-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="ui.png">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5>Gadget Galaxy Prototype</h5>
+                        <h4>UI Development</h4>
+                    </div>
+                    <div class="row-icon">
+                        <i class="ri-layout-5-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="fbads.png">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5>Facebook ADS Campaign</h5>
+                        <h4>Facebook ADS Management</h4>
+                    </div>
+                    <div class="row-icon">
+                        <i class="ri-facebook-box-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="center">
+            <div class="h-main">
+                <div class="h-text">
+                    <h1>Contact</h1>
+                </div>
+                <p>I would genuinely appreciate the opportunity to learn more about the details of your project
+                    and explore the ways in which I can contribute and provide assistance. If you could take a moment to kindly fill in the form with the pertinent information,
+                    it would allow me to gain a comprehensive understanding of your requirements. Rest assured that upon receiving your submission,
+                    I will promptly review the details and endeavor to get back to you at the earliest convenience, ready to discuss potential collaborations or any support you may need.
+                    Thank you in advance for considering this, and I look forward to the prospect of working together.</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="Email address.." required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write a message here.." required></textarea>
+                <input type="submit" name="" value="Send Message" class="send-btn">
+            </form>
+        </div>
+    </section>
+
+    <div class="end-content">
+        <a href="#" class="scroll-top">
+            <i class="ri-arrow-up-s-fill"></i>
+        </a>
+
+        <div class="copyright">
+            <p>©︎ 2024 D. ALL RIGHT RESERVED</p>
+        </div>
+
+        <div class="copyright">
+            <p>DEVELOPED BY DJANAIRAH BENITO</p>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
