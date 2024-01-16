@@ -236,7 +236,7 @@ header .btn {
 
 .about-content {
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     align-items: center;
     text-align: center;
     gap: 2.5rem;
@@ -264,7 +264,7 @@ header .btn {
 
 .work-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(3, minmax(250px, auto));
     align-items: center;
     gap: 2rem;
     margin-top: 5rem;
